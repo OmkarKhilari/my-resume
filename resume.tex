@@ -208,3 +208,220 @@
   \resumeSubHeadingListEnd 
 
 \end{document}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% serif
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  % Last Updated on January 12th, 2024
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Omkar Khilari} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/OmkarKhilari}{\underline{github.com/OmkarKhilari}} $  $
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/omkar-khilari-26697b261/}{\underline{linkedin.com/in/omkarkhilari}} $  $
+    \faIcon{envelope}
+    \href{mailto:omkarkhilari95@gmail.com}
+    {\underline{omkarkhilari95@gmail.com}}
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Indian Institute of Technology, Hyderabad}{2022-2026}
+      {B.Tech in Materials Science and Metallurgical Engineering}{Current CGPA: 8.06}
+
+    \resumeSubheading
+      {Dhruv Global School, Sangamaner}{2019-2021}
+      {12th}{Score: 93.2}
+
+    \resumeSubheading
+      {Emauss Swiss Referral Hospital School, Palamaner}{2016-2019}
+      {10th}{Score: 93.2}
+
+  \resumeSubHeadingListEnd
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+        {\textbf{\href{https://kmtracker.omkarkhilari.me}{KM Tracker}} $|$ \footnotesize\emph{Flutter, Python, APIs (Google Spreadsheets, Google Drive), Firebase, Firestore}}{}
+        \resumeItemListStart
+            \resumeItem{Developed for Urja Foods to automate manual HR tasks by auto-filling sheets from client data, reducing human error and increasing efficiency.}
+          \resumeItemListEnd
+    
+        \resumeProjectHeading
+        {\textbf{\href{https://example.com}{ChatHub}} $|$ \footnotesize\emph{Flutter, Golang, PostgreSQL, FCM}}{}
+        \resumeItemListStart
+            \resumeItem{Cross-platform app for private chats by creating rooms, developed collaboratively using the mentioned technologies.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+        {\textbf{\href{https://selfmapping.omkarkhilari.me}{Self Mapping}} $|$ \footnotesize\emph{ReactJS, Python, CSS, APIs (Google Spreadsheets)}}{}
+        \resumeItemListStart
+            \resumeItem{Developed for Urja Foods to enable employees to self-assess their KRA/KPI performance through a structured questionnaire and scoring system.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/oAndBtech/spend-sync/releases/tag/v0.2.0-beta}{SpendSync}} $|$ \footnotesize\emph{Flutter, Firebase}}{}
+        \resumeItemListStart
+            \resumeItem{Ongoing project for expense tracking with user authentication to ensure data security.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/OmkarKhilari/todo-rem/releases/tag/v1.0.0-beta}{ToDo App}} $|$ \footnotesize\emph{Flutter}}{}
+        \resumeItemListStart
+            \resumeItem{Developed a user-friendly ToDo application for daily task management.}
+        \resumeItemListEnd 
+
+        \resumeProjectHeading
+        {\textbf{\href{https://elanhomepage.omkarkhilari.me}{Elan Homepage}} $|$ \footnotesize\emph{ReactJS}}{}
+        \resumeItemListStart
+            \resumeItem{Created a React website as a task for Elan and nVision club at IITH.}
+        \resumeItemListEnd 
+
+        \resumeProjectHeading
+        {\textbf{\href{https://iimiith.omkarkhilari.me}{IIM-IITH}} $|$ \footnotesize\emph{Bootstrap CSS, APIs (Google Spreadsheets, Google Forms)}}{}
+        \resumeItemListStart
+            \resumeItem{Group project by the Web Dev Team to enhance the visibility and outreach of the IIM Student Chapter at IITH.}
+        \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+      \textbf{Languages}{: Java, Python, Dart, Golang, C/C++, JavaScript, HTML/CSS} \\
+      \vspace{0.1cm}
+      \textbf{Backend}{: Golang, FastAPI, PostgreSQL} \\
+      \vspace{0.1cm}
+      \textbf{Frontend}{: Flutter, ReactJS} \\
+      \vspace{0.1cm}
+      \textbf{Miscellaneous}{: Git/GitHub, Linux, Firebase/Firestore, Hosting}
+ 
+}}
+
+ \end{itemize}
+ 
+% -------------------- EXPERIENCE --------------------
+\section{Experience}
+  \resumeSubheading
+    {\textbf{IIM Student Chapter}}{Sept. 2023 -- Present}
+    {\footnotesize\emph{Web Dev Team}}{}
+    \resumeItemListStart
+        \resumeItem{Played a key role in developing and maintaining the official IIM IITH website, ensuring it remains fully functional and user-friendly.}
+        \resumeItem{Implemented new features and optimized existing components to enhance the user experience and site performance.}
+        \resumeItem{Assisted in troubleshooting and resolving technical issues promptly.}
+        \resumeItem{Contributed to the continuous improvement of the website’s design and functionality based on user feedback.}
+    \resumeItemListEnd 
+
+\end{document}
